@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Du Ek Sam</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container" id="bike">
+    <nav>
+        <!--Img of the logo-->
+        <img src="images/honda.png" class="logo" />
+        <!--test drive btn-->
+        <a href="#" class="btn">Test Drive</a>
+    </nav>
+
+
+    <!--start of the contect class-->
+    <div class="content">
+        <!--Header @-->
+        <h2>THE HONDA  </h2>
+        <br />
+        <!--header 1-->
+        <h1>WAVE 100 </h1>
+        <!--Start of the paragraph-->
+        <p>
+            HONDA, driven by its philosophy "The Power of Dreams,"
+             has introduced a new tagline: "The Power of Dreams — <br>How We Move You." 
+             This new brand slogan reflects the company's continued mission to innovate 
+             and provide <br> people with the joy and freedom of mobility, from the <br> present into the future.
+        </p>
+        <!--header 3-->
+        <h3>Choose your Color </h3>
+
+        <!--class for the 3 diffrent colour btns-->
+        <div class="colour-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+    <!--end of the content class-->
+    </div>
+
+</div>
+
+<!--Script for the changing the images of the bike when the diffrent colours are chosen-->
+<script>
+    let redBtn = document.getElementById("red");
+    let blueBtn = document.getElementById("blue")
+    let blackBtn = document.getElementById("black")
+    let bike = document.getElementById("bike")
+
+    /*funtion for the red button*/ 
+    redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW1.png)";
+    }
+
+    /*funtion for the blue button*/
+    blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW2.png)";
+    }
+
+    /*funtion for the balck button*/
+    blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(images/BMW3.png)";
+    }
+
+</script>
+
+</body>
+</html>
